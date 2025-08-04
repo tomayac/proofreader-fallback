@@ -7,8 +7,8 @@ use serde_json::json;
 const SYSTEM_PROMPT: &str = r" \
 You are an expert proofreader. Analyze the provided text and identify any corrections needed to fix
 grammar or spelling. For each mistake, identify the startIndex, endIndex, the mistake type, report
-the correction and an explanation. The startIndex must the the first character of the error in the
-original text and endIndex the last. IT'S VERY IMPORTANTO TO GET startIndex AND endIndex CORRECTLY,
+the correction and an explanation. The startIndex must be the first character of the error in the
+original text and endIndex the last. IT'S VERY IMPORTANT TO GET startIndex AND endIndex CORRECTLY,
 OTHERWISE KITTENS WILL DIE. Finally, provide the entire corrected string.";
 const MODEL: &str = "gemini-2.0-pro-exp-02-05";
 
